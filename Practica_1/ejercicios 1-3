@@ -1,0 +1,139 @@
+EJERCICIO 1
+
+1. ¿Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+HTML es un lenguaje de marcado que se pensó en un principio ara describir semánticamente 
+documentos científicos pero su diseño general ha permitido que se adapte para describir varios otros 
+tipos de documentos e incluso aplicaciones.
+
+El mismo se creó en 1990 y desde dicha fecha ha sufrido varias revisiones y modificaciones. En los
+primeros años ha cambiado su alojamiento de el CERN al IETF donde sucesivos lanzamientos se han dado en 
+su diseño inicial, para finalmente recaer en manos de W3C que tranformó su enfoque a un nivel más 
+pragmático llamandolo HTML 3.2 que terminó de ser completado en 1997, sucedido rápidamente a finales del
+año por HTML 4.01. Sucesivamente, W3C siguió trabajando en mejoras, y para 1998 fucionaron HTML con XML
+en lo que se conocería como XHTML hacia fines de siglo. Luego se produjo una merma en su evolución y no
+fue hasta 2006 cuando W3C y WHATWG unieron fuerzas y decidieron emprender el desarrollo de HTML 5 tal como 
+lo conocemos hoy en día.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos
+con HTML?
+
+-Separar estructuras y representación
+    El HTML tiene sus raíces en SGML, que siempre ha sido un lenguaje para la especificación de código 
+    estructural. A medida que el HTML madura, un número cada vez mayor de sus elementos y atributos 
+    presentacionales ha sido reemplazado por otros mecanismos.  La experiencia ha demostrado que separando 
+    la estructura de un documento de sus aspectos presentacionales  se reduce el coste de servir a un amplio 
+    espectro de plataformas o medios, facilitando así las revisiones del documento.
+-Considerar la accesibilidad universal
+    Para hacer la Web más accesible a todos, en especial a aquéllos con discapacidades, se debe considerar 
+    cómo se pueden representarse los documentos en diferentes plataformas: navegadores basados en voz, lectores
+    braille, etc. Además, para que los documentos sean correctamente interpretados, se debe incluir 
+    información sobre el idioma natural y la dirección del texto, cómo está codificado el documento, 
+    y otras cuestiones relacionadas con la internacionalización.
+-Ayudar a los agentes de usuario con la representación incremental
+    Mediante un diseño cuidadoso de las tablas y haciendo uso de las nuevas características de HTML, se 
+    pueden ayudar a los agentes de usuario a representar los documentos más rápidamente. 
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y obsoleto?
+
+Un elemento o atributo desaprobado es aquel que ha quedado anticuado por la presencia de estructuras nuevas. 
+Los elementos desaprobados se definen en el manual de referencia en los lugares apropiados, pero claramente 
+marcados como desaprobados. Los elementos desaprobados pueden declararse obsoletos en versiones futuras.
+
+Un elemento o atributo obsoleto es aquél para el cual no hay garantía de soporte. Los elementos obsoletos han
+dejado de estar definidos en la especificación, pero se enumeran por motivos históricos en la sección de 
+cambios del manual de referencia.
+
+4. ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+El DTD la estructura de un documento HTML: los elementos, atributos, entidades, notaciones, etc, que pueden 
+aparecer, el orden, el número de veces, cuáles pueden ser hijos de cuáles, etc. El interprete utiliza el DTD 
+para verificar si un documento es válido, es decir, si el documento cumple las reglas del DTD.
+Para HTML 4.01, existen 3 tipos de DTD:
+    -Strict: contiene todos los elementos y atributos pero no incluye elementos de presentación y en desuso, 
+    como la etiqueta font o los marcos. Aquí se da prioridad a la estructura frente a la presentación.
+    -Transitional: incluye todos los elementos y cualidades de Strict pero agrega cualidades de presentación y 
+    elementos desaprobados u obsoletos.
+    -Frameset: igual que Transitional pero además incluye los marcos.
+
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+
+El HTML permite a los autores especificar metadatos, es decir, información sobre un documento más que 
+contenido del propio documento. Por ejemplo, para especificar el autor de un documento, puede utilizarse el 
+elemento META de la siguiente forma: <META name="Author" content="Agus"> 
+
+-------------------------------------------------------------------------------------------------------------
+
+EJERCICIO 2
+
+a. Es un comentario, puede indicarse en cualquier parte del documento HTML y sirve de uso para aclarar partes
+del código o realizar alguna acotación de importancia. Se identifica por estar entre <!-- ... -->
+
+b. Es un contenedor el cual se encuentra identificado bajo el atributo "id" como "bloque1", el id puede no tiparse
+pero cada elemento del documento tiene uno asignado lo cual si no se realiza manualmente, es el interprete quien
+atribuye uno por defecto que es único. 
+
+c. Es una imagen la cual no tiene asignada ninguna fuente (es decir que no va a mostrar ninguna), pero en su lugar
+si mostrará lo que está bajo el atributo "alt", es decir "lugar imagen". Luego, la imagen se encuentra edentificada
+como el contenedor div del apartado anterior y además tiene un nombre "im1" para poder ser manipulada en código
+Javascript. Por último tiene atributos de presentación como el ancho de 32px y el alto de 32px también.
+
+d. Metadatos que hacen a referencia a palabras claves en lenguaje español (keywords -> es) como casa, compra, venta
+y alquiler. Estas keywords ayudan a los buscadores a ser más fácil de encontrar el documento. Además proporciona
+una fecha de expiración al 6-Sep-2019 a las 7:49 PM.
+
+e. Enlace al sitio http://www.e-style.com.ar/resumen.html bajo el atributo "href" de tipo texto en html, en lenguaje
+español que codificada caracteres en utf-8 vinculado con "help" en el presente documento.
+
+d. Tabla la cual resume "Datos correspondientes al ejercicio vencido" (el atributo summmary no es visible en los
+navegadores pero si puede ser interpretado por lectores de pantalla). Además contiene un titulo en la etiqueta 
+<caption> alineado en la parte superior y un ancho de 200px. Está compuesta por cuatro columnas -|A|B|C y dos 
+filas 1|2 con contenido todo vacio especidicado por el caracter especial &nbsp. 
+
+-------------------------------------------------------------------------------------------------------------
+
+EJERCICIO 3
+
+a. El primer enlace simplemente navega hacia Google. El segunda también lo hace pero en una nueva pestaña.
+El tercero haría lo mismo solo si tuviera contenido, es decir, no se puede ver. El cuarto no tiene link
+de referencia pues al presionarlo no hace nada. Y el quinto se mueve al enlace con id="arriba".
+
+b. El primer párrafo tiene el enlace en el texto, el segundo en la image, el tercero en ambos bajo la misma
+etiqueta <a> y el cuarto también ambos pero en etiquetas <a> separadas.
+
+c. El primero son tres idententaciones una debajo de la otra agrupadas bajo la misma <ul>. El segundo es lo mismo
+pero ahora además se encuentran numeradas (lo que es posible utilizando <ol>). El tercero se ve igual que el segundo
+pero en realidad se encuentran agrupadas por separado y forzado el valor de cada identación. Por último, blockquote
+crea una cita donde simplemente se escribe un párrafo con las identaciones manuales.
+
+d. El primero una tabla de 2 columnas y 2 filas con borde y largo de 300px. El segundo la misma tabla solo que a los 
+titulos de las columas se los alinea al medio y se le agrega un efeto de tipo bold a la letra.
+
+e. El primero una tabla con un titulo "Titulo" de 2x3 rellenas de espacios en blanco y pintadas con backdround gris.
+El segundo la misma tabla visualmente pero ahora el titulo forma parte de una fila extra que se expande a las 3
+columnas.
+
+f. El primero una tabla similar al segundo del apartado anterior pero con la salvedad de que la primer columna 
+se expande a 2 filas luego del titulo. Con el mismo razonamiento, el segundo representa la primer celda de la segunda
+fila expandida a dos columnas.
+
+g. El primero la tabla pareciera que tiene solo dos columnas pero en realidad la primera (luego del titulo) se
+expande a dos y la otra toma la mitad del ancho completo de la tabla. El segundo representa la misma tabla
+pero agregandole estilos al borde, de padding y de espaciado a las celdas.
+
+h. El primer formulario tiene dos campos autocompletados con "xxx" que al submitearlo redirige a procesar.php. Luego,
+el segundo no está contenido dentro de un <fieldset> y no realiza ningún acción al enviarlo además de no tener 
+valores por defecto al inicio. Por último, el tercero es similar al primero sin autocompletarse pero que al 
+terminarlo envia un mail a xx@xx.com.
+
+i. El primero es un botón con una imagen y una descripcion <label> dentro que no realiza nada al presionarlo. El 
+segundo, es lo mismo sin la imagen. Notar que <label> no sería lo mejor para indicar un valor sino que directamente
+sería conveniente utilizar el atributo "value" del <button>.
+
+j. El primero son dos inputs de tipo radio, es decir que se pueden presionar uno o el otro. En el segundo en cambio,
+los dos se pueden presionar simultaneamente por tener distinto valor en el atributo "name".
+
+k. El primero representa una lista de selección simple (es decir donde solo se puede seleccionar un valor), donde
+las opciones se encuentran clasificadas en secciones de "Caso 1" y "Caso 2". En el segundo, la seleccion puede ser
+multiple, es decir que se puede presionar más de un valor como opción. 
+
