@@ -1,0 +1,121 @@
+EJERCICIO 1
+
+1. ¿ Qué es CSS y para qué se usa?
+
+CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada.
+Las hojas de estilo son una tecnología que permite controlar la apariencia de una página web. En un principio, los
+sitios web se concentraban más en su contenido que en su presentación. Para ello, CSS describe como los elementos
+dispuestos en la página son presentados al usuario. El lenguaje de las Hojas de Estilo está definido en las
+Especificaciones  CSS1, CSS2 y CSS3 del W3C, y es un estándar aceptado por toda la industria.
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+El navegador analiza el CSS y ordena en diferentes secciones las diferentes reglas según el tipo de selector. 
+Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué 
+reglas deben aplicarse y a qué nodos se les aplica el estilo según corresponda.
+
+3. ¿Cuáles son las tres formas de dar estilo a un documento?
+
+-Directamente a la marca etiqueta HTML.
+-En el head de la página.
+-A través de un archivo independiente con extensión *.css vinculado al archivo HTML.
+
+4. ¿Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique.
+
+-Selector universal: * {atributo:valor} -> * {color: red;}
+-Selector etiqueta: etiqueta {atributo:valor} -> span {color: red;} 
+-Selector clase: .clase {atributo:valor} -> .titulo {color: red;}
+-Selector identificador: #id {atributo:valor} -> #grupo-uno {color: red;}
+-Selector descendiente: selector1 selector2 selectorN {atributo: valor} -> div p {color: red;}
+-Selector combinado: selector1, selector2, selector3{atributo: valor} -> div, p {color: red;}
+-Selector hijo: selector1 > selector2 {atributo: valor} -> div > p {color: red;}
+-Selector adyacente: selector1 + selector2{atributo: valor} -> div + p {color: red;}
+
+5. ¿Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+Una pseudo-clase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector. Las más utilizadas a etiquetas <a> son :link, :active, :hover y :visited.
+
+6. ¿Qué es la herencia?
+
+La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten a sus hijos. Mediante la herencia, por ejemplo, se pueden especificar las propiedades de las fuentes de los elementos html o body y todo el resto de elementos los heredarán. Se pueden especificar los colores de fondo y de primer plano de un elemento contenedor concreto y todos los elementos hijos de este contenedor heredarán automáticamente el color de primer plano. 
+
+7. ¿En qué consiste el proceso denominado cascada?
+
+La cascada es el mecanismo que controla el resultado final cuando se aplican varias declaraciones CSS contrapuestas al mismo elemento. Si dos declaraciones tienen la misma importancia, la especificidad de las reglas decidirá cuál se debe aplicar. Si las reglas tienen la misma especificidad, el orden de las fuentes controla el resultado.
+
+EJERCICIO 2
+
+Al párrafo con id="normal" se le aplica la fuente de letra Arial (y si es navegador no la soporta, Helvetica) con tamaño 11 y en negrita.
+A todas las etiquetas con id="destacado" se le aplica un borde de tamaño 2, azul y sólido.
+Al párrafo con id="distinto" se lo dibuja con un fondo celeste y letra roja.
+
+EJERCICIO 3
+
+Cuando el párrafo es de clase "quitar", su letra está en color rojo. Cualquier etiqueta con la clase "quitar" que no sea un párrafo <p> no aplica a este estilo. A todos los elementos con clase "desarrollo" se lo pone en letra de tamaño 8, mientras que a "importante", en letra 20. Se pueden aplicar varias clases a un elemento <p> por ejemplo que sea de clases "quitar" e "importante", donde el resultado es letra de tamaño 20 en rojo.
+
+EJERCICIO 4
+
+En el primer ejemplo, se puede apreciar que el primer párrafo toma su estilo de la regla implícita en la etiqueta, mientras que en el segundo toma el mismo desde la declarativa global de <p>. Por otro lado la tabla se mantiene igual en ambas muestras destacando su color verde desde la llamada *. Y por último, la etiqueta no varía en ambos adoptando las pseudo-clases declaradas global para todos los vínculos <a>.
+
+EJERCICIO 5
+
+1. 
+h1{
+    color: red;
+}
+
+2. 
+div {
+    p {
+        a[href]{
+            color: black;
+        }
+    }
+}
+
+3.
+div#ultimo{
+    ul{
+        li{
+            color: yellow;
+            a{
+                color: blue;
+            }
+        }
+    }
+}
+
+4. 
+h1{
+    .importante{
+        color: red;
+    }
+}
+
+.importante{
+    color: green;
+}
+
+5.
+h1[title]{
+    color: blue;
+}
+
+6.
+ol{
+    li{
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #8F00FF;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
