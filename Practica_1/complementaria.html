@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<head>
+    <script type="text/javascript">
+        function mostrar(){
+            document.getElementById('nombreObtenido').textContent = document.getElementById('nombre').value;
+            document.getElementById('mailObtenido').textContent = document.getElementById('email').value;
+            document.getElementById('fechaObtenido').textContent = document.getElementById('fecha').value;
+            document.getElementById('colorObtenido').textContent = document.getElementById('color').value;
+            document.getElementById('numeroObtenido').textContent = document.getElementById('numero').value;
+        }
+
+        function submit(){}
+    </script>
+</head>
+
+<!--
+    Ejercicio 1
+        Ventajas de HTML:
+            -Plena compatitibilidad en navegadores: Los navegadores más populares como Chrome, Firefox, Safari y Opera
+            soportan HTML5, es decir, sin importar qué navegador se emplee, el contenido se puede visualizar 
+            correctamente.
+            -Almacenamiento local: los datos que se almacenan en el navegador no son tranferidos al servidor por lo que
+            se mantiene de forma segura en local. Además, la información se conserva aún cuando el navegador se cierre
+            y vuelva a abrirse.
+            -Código ordenado: el código HTML se puede separar fácilmente entre etiquetas y contenido, permitiendo así 
+            que los desarrolladores puedan trabajar de manera efectiva y detectar errores rápidamente. Las etiquetas son
+            claras y descriptivas.
+            -Gratuito: no se necesita ningún tipo de programa especial para empezar a programar en HTML5 ni se cobra
+            un dividendo por su uso y difusión.
+            -Diseño adaptativo: cada página realizada en HTML5 que se ve en ordenadores, también se puede adaptar a los 
+            dispositivos móviles. Esta característica del lenguaje HTML es probablemente una de las más útiles, pues
+            se puede acceder a cualquier página o aplicación web desde un dispositivo móvil y permite que la experiencia
+            sea igual de buena que al visitar una página web.
+
+        ¿Por qué utilizarlo? Por su gran capacidad de accesibilidad. Esto va de la mano con la última ventaja que se ha
+        mencionado, ya que el resultado final de la programación en HTML se puede acceder desde cualquier dispositivo.
+        Además es simple de aprender y ordenado para trabajar. No confundir con que el mismo sea básico, ya que tiene
+        muchísimo potencial para soportar aplicaciones WEB de gran complejidad y funcionalidad.
+
+    Ejercicio 2-3:
+        HTML5 soporta nativamente canvas y multimedia tal como audio y video. Canvas permite dibujar en un área
+        determinada utilizando lengujae Javascript. Por otro lado, bajo la etiqueta audio se permite la carga y 
+        ejecución de archivos de audio sin requerir un plug-in de Flash, Silverlight o Java. Algo similar pasa bajo la 
+        etiqueta video donde se permite mostrar un video sin la necesidad de plugin Flash. El comité de estandarización 
+        W3C deja abierto a cada empresa que desarrolla navegadores los formatos que quieran soportar.
+-->
+
+<p>Archivo de audio (se cambia el propuesto en la práctica pues no está disponible): </p>
+<audio controls>
+    <source src="https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.aac">
+</audio>
+
+<br />
+
+<p>Archivo de video (se cambia el propuesto en la práctica pues no está disponible): </p>
+<video controls height="300">
+    <source src="http://www.tutorialesprogramacionya.com/videos/video1.mp4">
+</video>
+
+
+<!--Ejercicio 4-->
+<p>Formulario: </p>
+<form action="#">
+    Nombre <input type="text" id="nombre" required>
+    <br />
+    <br />
+    Email <input type="email" id="email">
+    <br />
+    <br />
+    Fecha <input type="date" id="fecha">
+    <br />
+    <br />
+    Color <input type="color" id="color">
+    <br />
+    <br />
+    Numero <input type="number" id="numero" min="1" max="10">
+    <br />
+    <br />
+    <input type="submit" value="Enviar">
+    <button type="button" onclick="mostrar()">Mostrar</button>
+</form>
+
+<br />
+<span id="nombreObtenido"></span>
+<br />
+<span id="mailObtenido"></span>
+<br />
+<span id="fechaObtenido"></span>
+<br />
+<span id="colorObtenido"></span>
+<br />
+<span id="numeroObtenido"></span>
+
+
+
+
+
