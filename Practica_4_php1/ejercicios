@@ -28,3 +28,24 @@ Salida
 
 EJERCICIO 2
 
+a. Los tres códigos son equivalentes. En el primero se utiliza la estructura while (mientras) para iterar sobre
+la variable previamente declarada $i hasta que la misma llegue a un valor igual a 10. En el segundo se utiliza
+la misma estructura pero escrita de otra forma, especificando claramente donde termina la misma, además el contador
+es incrementado en una línea aparte. Por útlimo, la tercera forma utiliza la estructura do-while (hacer-mientras) 
+la cual realiza ciertas acciones hasta que la condición escrita dentro del while sea falsa.
+
+b. Los cuatro códigos son equivalentes. En el primero se utiliza la estructura for (para) bien estándar, con el 
+contador declarado en su valor base, la condición de fin y el incremento del contador que se ejecuta al final de todo.
+En la segunda, el cuerpo del for se incluye dentro de su tercer parámetro antes del incremento, es por ello que arroja
+la misma salida, si estuviera al revés ($i++, print $i) la salida sería distinta (iría de 2 a 11). El tercero no 
+especifica la condición de fin por lo que utiliza la sentencia break para que cuando se cumpla que $i>10 se rompa el
+ciclo. El último se podría decir que es todo manual, el inicio del contador se declara afuera de la estructura y 
+tanto la condición de fin como el incremento se hardcodean en el cuerpo. 
+
+c. Los dos códigos son equivalentes. En el primero se determina mediante una estructura de cascada de condiciones el 
+valor de una variable $i. En el segundo, se utiliza la estructura switch-case (cambiador) que cae sobre el caso correcto
+de $i y muestra la salida indicada.
+
+EJERCICIO 3
+
+
