@@ -56,4 +56,10 @@ al mismo archivo php. Si está enviado, realiza una comprobación del campo edad
 
 EJERCICIO 4
 
+En primer lugar, se producen errores pues las variables $flor y $color no se encuentran definidas. Esto se debe a 
+que el archivo que contiene dichas variables aún no se encuentra importado con la sentencia include. Es por ello que
+en el segundo caso, la salida es correcta y se muestra 'El clavel blanco'.
+
+EJERCICIO 5
+
 
