@@ -72,4 +72,11 @@ ARRAYS - FUNCIONES
 
 EJERCICIO 1
 
+Ambos códigos son equivalentes. En el primero se define un Array como un mapeo <string><string> con la salvedad de que
+el último registro no tiene key, por lo que se almacena en [0]. De la misma forma, en el segundo caso se ingresa
+manualmente a cada key con [] y el caso del 4 se ve un poco más claro como es que no se le asigna ninguna key y una vez
+se almacena en $a[0].
+
+EJERCICIO 2
+
 
