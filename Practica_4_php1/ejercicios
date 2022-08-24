@@ -1,0 +1,30 @@
+EJERCICIO 1
+
+Variables:
+    a <bool>
+    b <string>
+    c <string>
+    d <int>
+    f <int>
+    g <int>
+
+Operadores
+    ++ -> operador de incremento en una unidad
+    += -> operador de incremento en varias unidades
+    * -> operador binario de multiplicación
+    bool ? .. : .. -> operador ternario condicional
+
+Funciones
+    doble($i) -> función que retorna el doble de un elemento i 
+    is_int(<mixed> $i) -> determina si una variable pasada como parámetro es de tipo int
+    is_string (<mixed> $i) -> determina si una variable pasada como parámetro es de tipo string
+    gettype(<mixed> $i) -> retorna el tipo de la variable pasada como parámetro
+
+Estructuras de control
+    if -> condicional
+
+Salida
+    booleanstringstringinteger1xyzxyz184444
+
+EJERCICIO 2
+
