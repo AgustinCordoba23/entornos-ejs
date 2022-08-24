@@ -48,4 +48,12 @@ de $i y muestra la salida indicada.
 
 EJERCICIO 3
 
+a. Para el documento de título Documento 1, muestra al 90% del ancho de la pantalla, una tabla que contiene 5 filas
+y 2 columnas con borde de 1 y espacios en blanco en el cuerpo de cada celda.
+
+b. Si el formulario no está enviado muestra el formulario que pide un input de edad el cual envía por método POST
+al mismo archivo php. Si está enviado, realiza una comprobación del campo edad y muestra si es mayor o menor a 21.
+
+EJERCICIO 4
+
 
