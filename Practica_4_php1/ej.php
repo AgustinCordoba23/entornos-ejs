@@ -1,8 +1,6 @@
 <?php
-$a['color'] = 'rojo';
-$a['sabor'] = 'dulce';
-$a['forma'] = 'redonda';
-$a['nombre'] = 'manzana';
-$a[] = 4;
-print_r($a);
+$matriz = array(5 => 1, 12 => 2);
+$matriz[] = 56;
+$matriz["x"] = 42; unset($matriz[5]); unset($matriz);
+echo $matriz;
 ?> 

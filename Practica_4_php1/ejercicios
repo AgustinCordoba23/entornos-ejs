@@ -79,4 +79,16 @@ se almacena en $a[0].
 
 EJERCICIO 2
 
+a. La salida del código es bar1, esto se debe a que se accede al Array en formato de keys, al principio sobre "x" y 
+luego sobre 12. En este último caso se muestra 1 que determina true, si fuera false mostraría 0.
+
+b. En este caso se representa una concatenación de Arrays, es decir que hay uno dentro del otro representando el que 
+se encuentra adentro un mapeo entre key y valor. Además, se podría permitir el agregado de más valores dentro $matriz.
+Para su acceso se utiliza el doble corchete [][] y la salida es 5 9 42. 
+
+c. En este último ejemplo, la salida es nula, es decir que no muestra nada. Esto se debe a que en la última línea se
+realiza unset($matriz) que remueve la variable del contexto, es decir que ya no está definida. 
+
+EJERCICIO 3
+
 
