@@ -1,6 +1,7 @@
 <?php
-$matriz = array(5 => 1, 12 => 2);
-$matriz[] = 56;
-$matriz["x"] = 42; unset($matriz[5]); unset($matriz);
-echo $matriz;
-?> 
+function sumar($sumando1,$sumando2){
+ $suma=$sumando1+$sumando2;
+ echo $sumando1."+".$sumando2."=".$suma;
+}
+sumar(5,6);
+?>

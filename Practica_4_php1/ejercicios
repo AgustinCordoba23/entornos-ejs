@@ -91,4 +91,12 @@ realiza unset($matriz) que remueve la variable del contexto, es decir que ya no 
 
 EJERCICIO 3
 
+a. Este código hace uso de la función getdate() que obtiene la fecha y la hora de la computadora. Luego para acceder 
+a sus datos se trabaja como un array con key donde por ejemplo en [hours] se almacenan las horas. Entonces por ejemplo,
+corriendo el código ahora, la salida resulta "Has entrado en esta pagina a las 10 horas, con 6 minutos y 33
+segundos, del 24/8/2022".
 
+b. Se llama a una función que suma dos números y directamente en su cuerpo sin utilizar un valor de retorno muestra la
+operación completa visualizando los dos números pasados como parámetros y el resultado: 5+6=11. 
+
+EJERCICIO 4
